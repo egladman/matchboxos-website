@@ -106,13 +106,13 @@ nav li a:visited {
 
 .matchbox::before {
     content: "matchbox";
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 700;
 }
 
 .matchbox::after {
     content: "os";
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
     margin-left: 0.5ch;
 }
