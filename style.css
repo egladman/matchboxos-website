@@ -1,84 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #000;
-  color: #fff;
-  margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  margin: 0;
 }
 
+.invert {
+  background-color: #000;
+  color: #fff;
+}
+
+code {
+    background: unset;
+    font-size: 1em;
+}
+
+/* Links */
+
 a {
-  color: #6bb3ff;
+    color: #6bb3ff;
+    text-decoration: underline;
 }
 
 a:visited {
     color: #987ce6;
 }
 
-main {
-  margin: 0 auto;
-  min-width: 80ch;
-  text-align: center;
+/* Buttons */
+.button-black {
+    background-color: #000;
+    border-color: #000;
+}
+.button-black.button-clear,
+.button-black.button-outline {
+    background-color: transparent;
+    color: #000;
+}
+.button-black.button-clear {
+    border-color: transparent;
 }
 
+.button-white {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+.button-white.button-clear,
+.button-white.button-outline {
+    background-color: transparent;
+    color: #fff;
+}
+.button-white.button-clear {
+    border-color: transparent;
+}
+
+/* Logo */
+.matchbox {
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 15rem;
+}
+
+.matchbox::before {
+    content: "matchbox";
+    font-size: 10rem;
+    font-weight: 700;
+}
+
+.matchbox::after {
+    content: "os";
+    font-size: 3rem;
+    font-weight: 300;
+    margin-left: 0.5ch;
+}
+
+/* Header */
 header {
-  margin-top: auto;
-  margin-bottom: 6em
+    text-align: center;
+    padding: 12rem 0;
+    margin-bottom: 12rem;
+    border-bottom: 1px solid #FFF;
 }
 
+header .matchbox {
+    text-align: center;
+}
+
+header .button:not(:only-of-type):not(:first-of-type) {
+    margin-left: 2rem;
+}
+
+header .description {
+    margin-bottom: 8rem;
+}
+
+/* Footer */
 footer {
-  margin-top: auto;
-  margin-bottom: 2em;
-  min-width: 80ch;
+    margin-top: 2rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 footer ul {
-  list-style-type: none;
-}
-
-footer ul > li {
-  display: inline-flex;
-  flex-shrink: 0
-}
-
-footer ul > li:not(:first-child) {
-  margin-left: 6em;
-}
-
-header h1 {
-  display: inline-flex;
-  font-size: 6em;
-  font-weight: 700;
-}
-
-header h1:last-child {
-  margin-left: 0.5ch;
-  font-weight: 400;
-  font-size: 2em;
-}
-
-#links {
-  margin-top: 4em;
-  display: flex;
-  justify-content: center;
-}
-
-#links > a {
-  color: #fff;
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px 20px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-}
-
-#links > a:hover {
-  background-color: #fff;
-  color: #000;
+    list-style: none;
 }
