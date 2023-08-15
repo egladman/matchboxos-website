@@ -128,6 +128,7 @@ header#home {
     padding: 3rem 0 12rem 0;
     background-size: 8rem 8rem;
     background-image: linear-gradient(to right, #202020 0.1rem, transparent 0.1rem), linear-gradient(to bottom, #202020 0.1rem, transparent 0.1rem);
+    background-position: center;
 }
 
 header .home {
